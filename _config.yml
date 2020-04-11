@@ -98,6 +98,4 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/afuryboy/afuryboy.github.io.git
-  branch: gh-pages
+  type: ''
