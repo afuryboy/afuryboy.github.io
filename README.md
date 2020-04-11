@@ -1,3 +1,0 @@
-# personal blog
-
-hello
