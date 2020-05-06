@@ -1,0 +1,87 @@
+
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary"><%= page.title%></h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="/css/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/css/images/illustrations/dots-group-sm.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/css/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/css/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/css/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/css/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-6">
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <%= page.content%>
+      </div>
+      <div class="col-md-4 text-center drag-lg-top">
+        <div class="shadow-down mb-4">
+          <img src="https://avatars3.githubusercontent.com/u/499550?s=460&u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&v=4" alt="author"
+            class="img-fluid w-100 rounded-lg border-thick border-white">
+        </div>
+        <!-- <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid"> -->
+        <h4><%= page.leader%></h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+
+<!-- vision -->
+<% if(config.homepage.about.vision.enable) { %>
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title"><%= config.homepage.about.vision.title%></h2>
+      </div>
+      <% for (var i in config.homepage.about.vision.item) { %>
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="<%= config.homepage.about.vision.item[i].icon%>" class="mb-4" alt="icon">
+        <h4 class="mb-4"><%= config.homepage.about.vision.item[i].title%></h4>
+        <p><%= config.homepage.about.vision.item[i].content%></p>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+<% } %>
+<!-- ./vision -->
+
+
+<!-- team -->
+<% if(config.homepage.about.team.enable) { %>
+<section class="section bg-cover" data-background="/css/images/backgrounds/team-bg.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title"><%= config.homepage.about.team.title%></h2>
+      </div>
+      <% for (var i in config.homepage.about.team.team_member) { %>
+      <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
+        <div class="card text-center">
+          <img src="<%= config.homepage.about.team.team_member[i].image%>" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title"><%= config.homepage.about.team.team_member[i].title%></h4>
+            <p class="text-light font-secondary"><%= config.homepage.about.team.team_member[i].designation%></p>
+          </div>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+</section>
+<% } %>
+<!-- /team -->

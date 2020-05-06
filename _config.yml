@@ -1,0 +1,266 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: OKfe
+subtitle: okfe前端团队
+description: okfe前端团队
+keywords: okt、react、vue
+author: 钱锟
+language: en
+timezone: ''
+logo: https://themes.gohugo.io/theme/kross-hugo-portfolio-template/images/logo.png
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: false
+#   tab_replace: ''
+#   wrap: true
+#   hljs: false
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: false
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: kross
+  
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: ''
+
+
+contact:
+  enabled: true
+  form_action: #
+
+email: iamfuryman@sina.com
+phone: 123456789090
+address: 125/A, CA Commercial Area, California, USA
+copyright: Copyright. All Rights Reserved.
+
+preloader: 
+  enabled: true
+  preloader: ''
+
+
+clients_logo_slider:
+  enable : true
+  item:
+    - logo : "images/clients-logo/client-logo-1.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-2.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-3.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-4.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-5.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-1.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-2.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-3.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-4.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-5.png"
+      URL : "#"
+
+
+homepage:
+  blog:
+    enable : true
+    title : "博客"
+    button:
+      enable : true
+      label : "know more"
+      url : "blog"
+  weekly:
+    enable : true
+    title : "周刊"
+    button:
+      enable : true
+      label : "know more"
+      url : "weekly"
+  banner:
+    title: 'hi, 我们是OKfe Team'
+  about:
+    enable : true
+    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    button:
+      enable : true
+      label : "know more"
+      url : "about"
+    vision:
+      enable : true
+      title : "愿景"
+      item:
+      - title : "币圈最优秀的前端团队"
+        icon : "/css/images/icons/plan.png"
+        content : "成为币圈最优秀的前端团队！"
+        
+      - title : "读者收获"
+        icon : "/css/images/icons/design.png"
+        content : "分享我们的技术，给读者带来新的灵感"
+        
+      - title : "使命"
+        icon : "/css/images/icons/print.png"
+        content : "用严格的技术态度做好每一件事"
+    team:
+      enable: true
+      title : "Team"
+      team_member:
+        - title : "Jack Schenziwe"
+          image : "/css/images/team/member-1.png"
+          designation : "前端工程师"
+          
+        - title : "Julias Carlie"
+          image : "/css/images/team/member-2.png"
+          designation : "前端工程师"
+          
+        - title : "John Doe"
+          image : "/css/images/team/member-3.png"
+          designation : "前端工程师"
+  skill:
+    enable : true
+    title : "我们擅长"
+    item:
+      - title : "React"
+        progress : "90%"
+        color : "#fdb157"
+        
+      - title : "性能优化"
+        progress : "95%"
+        color : "#9473e6"
+        
+      - title : "响应式开发"
+        progress : "80%"
+        color : "#bdecf6"
+        
+      - title : "H5"
+        progress : "70%"
+        color : "#ffbcaa"
+  # testimonial
+  team:
+    enable : true
+    title : "技术大牛"
+    item:
+      - name : "尤雨溪"
+        image : "https://avatars3.githubusercontent.com/u/499550?s=460&u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&v=4"
+        designation : "vue 作者"
+        content : "尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。"
+        
+      - name : "尤雨溪222"
+        image : "https://avatars3.githubusercontent.com/u/499550?s=460&u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&v=4"
+        designation : "vue 作者"
+        content : "尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。"
+        
+      - name : "尤雨溪333"
+        image : "https://avatars3.githubusercontent.com/u/499550?s=460&u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&v=4"
+        designation : "vue 作者"
+        content : "尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。"
+        
+site:
+  # social: 
+  #   item:
+  #     - logo: "",
+  #     - url: "#"
+
+highlight:
+  enable: false          ## 关闭 hexo 自带的 highlight 
+  line_number: false
+  # auto_detect: false   ## 这里要注释掉是因为 hexo 自带的 highlight 的 auto_detect 这个属性有 bug ，且之后要被官方抛弃  
+  tab_replace: 2
+
+hljs:
+  enable: true #true to enable the plugin
+  line_number: frontend # add line_number in frontend or backend
+  trim_indent: backend # trim the indent of code block to prettify output. backend or front-end (recommend)
+  copy_code: true # show copy code in caption.
+  label:
+    left: Code
+    right: ':'
+    copy: Copy Code

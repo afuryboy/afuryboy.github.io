@@ -1,0 +1,16 @@
+<div class="client-logo-slider d-flex align-items-center">
+    <!-- <% for (var i in config.clients_logo_slider.item){ %>
+        <% if (config.clients_logo_slider.item[i].URL){ %>
+            <a href="<%= config.clients_logo_slider.item[i].URL %>" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="<%= config.clients_logo_slider.item[i].logo %>" alt="client-logo"></a>
+        <% } else { %>
+        <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="<%= config.clients_logo_slider.item[i].logo %>" alt="client-logo"></span>
+        <% } %>
+    <% } %> -->
+    <% config.clients_logo_slider.item.forEach(function(slider){ %>
+        <% if (slider.URL){ %>
+            <a href="<%= slider.URL %>" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="<%= slider.logo %>" alt="client-logo"></a>
+        <% } else { %>
+        <span class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid" src="<%= slider.logo %>" alt="client-logo"></span>
+        <% } %>
+    <% }); %>
+  </div>
