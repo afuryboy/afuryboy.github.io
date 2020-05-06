@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>
+        
+        周刊第二期 | OKfe
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="okfe前端团队">
+    <meta name="keyword" content="okt、react、vue">
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.png"/>
+    
+
+    <style>
+      :root{
+        --primary-color: #41228e;
+      }
+    </style>
+  
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/slick/slick.css">
+<link rel="stylesheet" href="/css/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="/css/highlight.min.css">
+
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+      <link rel="shortcut icon" type="image/ico" href="/favicon.png"/>
+    
+  
+  <meta name="generator" content="Hexo 4.2.0"></head>
+  <body>
+    
+
+    <div class="preloader">
+        
+    </div>
+
+
+    <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="http://yoursite.com">
+        <!-- <img src="https://themes.gohugo.io/theme/kross-hugo-portfolio-template/images/logo.png" alt="OKfe"> -->
+        OKfe
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/">首页</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/blog">博客</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/weekly">周刊</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/archive">归档</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/tags">标签</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/about">关于</a>
+                
+            </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <!-- page title -->
+<section class="page-title bg-primary position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="text-white font-tertiary">周刊第二期</h1>
+        </div>
+      </div>
+    </div>
+    <!-- background shapes -->
+    <!-- <img src="{{`images/illustrations/page-title.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="{{`images/illustrations/leaf-pink-round.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
+    <img src="{{`images/illustrations/dots-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-3">
+    <img src="{{`images/illustrations/leaf-orange.svg`| relURL}}" alt="illustrations" class="bg-shape-4">
+    <img src="{{`images/illustrations/leaf-yellow.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
+    <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-6">
+    <img src="{{`images/illustrations/leaf-cyan-lg.svg`| relURL}}" alt="illustrations" class="bg-shape-7"> -->
+
+    <img src="/css/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="/css/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+    <img src="/css/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+    <img src="/css/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+    <img src="/css/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+    <img src="/css/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+    <img src="/css/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+  </section>
+  <!-- /page title -->
+  
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="font-tertiary mb-5">周刊第二期</h3>
+        <p class="font-secondary">
+          2020-05-06
+          <!-- <span class="text-primary">{{.Site.Params.Author}}</span> -->
+        </p>
+        <div class="content">
+          <!-- <img src="{{.Params.Image | absURL }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4"> -->
+          <h1 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h1><blockquote>
+<p>开发NPM模块的时候，有时我们会希望，边开发边试用，比如本地调试的时候，require(‘myModule’)会自动加载本机开发中的模块。Node规定，使用一个模块时，需要将其安装到全局的或项目的node_modules目录之中。对于开发中的模块，解决方法就是在全局的node_modules目录之中，生成一个符号链接，指向模块的本地目录。npm link就能起到这个作用，会自动建立这个符号链接。</p>
+</blockquote>
+<pre><code class="shell">sudo npm link //本地包根目录执行
+sudo npm link //本地包根目录执行
+sudo npm link //本地包根目录执行
+sudo npm link //本地包根目录执行</code></pre>
+<p>执行完命令之后npm会提示</p>
+<blockquote>
+<p>/usr/local/bin/test1 -&gt; /usr/local/lib/node_modules/test-command/bin/test.js<br>/usr/local/lib/node_modules/test-command -&gt; /Users/qiankun/qk/test/test-command</p>
+</blockquote>
+<blockquote>
+<p>上面npm告诉你，你执行test1命令，实际就是执行全局包test-command下面/bin/test.js。而全局的test-command包的路径实际指向的就是你本地开发的test-command项目路径</p>
+</blockquote>
+<pre><code class="shell">cd /usr/local/lib/node_modules   //npm全局安装包的路径,⚠️颜色不同
+
+ls</code></pre>
+<p>蓝色的是npm i -g的形式下载的，紫色的是在本地项目执行npm link</p>
+<p>npm link 命令生成一个软链接指向你本地。（这个链接实际就是包含你本地项目位置信息的文件，类似window快捷方式）</p>
+<p>你可以直接打开这些全局包</p>
+<pre><code class="shell">atom/code test-command   //你打开的就是你实际本地的地址</code></pre>
+<p>所以你在你本地修改的就是全局的修改。</p>
+<p>所以这对你还在测试阶段的包就很有帮助了，不需要以</p>
+<pre><code class="shell">node bin/xxx.js  //如果你的脚本依赖一些命令参数，就无能为力了</code></pre>
+<p>这对cli工具类确实很有帮助，可以直接模拟实际执行命令的场景。</p>
+<h1 id="你可能会遇到的问题"><a href="#你可能会遇到的问题" class="headerlink" title="你可能会遇到的问题"></a>你可能会遇到的问题</h1><p>在使用的过程中还可能遇到过这样的一个问题</p>
+<p>你执行了npm link 之后没有反应。没错，我就遇到了这样。😅略尴尬！（我猜测 可能跟我用编辑器打开的终端有关。因为偶尔表现出来的行为跟你用item2打开不一样。）</p>
+<p>没事，如果一条命令解决不了的事，那你就再执行一次。</p>
+<p>等你测试结束，你就可以执行</p>
+<pre><code class="shell">    npm unlink    //解除全局软链接</code></pre>
+<p> ⚠️ npm link 、npm unlink执行的地方总是在你本地包的根目录</p>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="https://docs.npmjs.com/cli/link" target="_blank" rel="noopener">npm 官方解释</a></p>
+<p><a href="http://javascript.ruanyifeng.com/nodejs/npm.html#toc18" target="_blank" rel="noopener">阮一峰</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">iamfuryman@sina.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">123456789090}</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">@Copyright. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/css/slick/slick.min.js"></script>
+<script src="/js/shuffle.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+
+  
+
+<script src="/js/main.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>
+        
+        OKfe
+        
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="okfe前端团队">
+    <meta name="keyword" content="okt、react、vue">
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.png"/>
+    
+
+    <style>
+      :root{
+        --primary-color: #41228e;
+      }
+    </style>
+  
+    
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/slick/slick.css">
+<link rel="stylesheet" href="/css/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="/css/highlight.min.css">
+
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+      <link rel="shortcut icon" type="image/ico" href="/favicon.png"/>
+    
+  
+  <meta name="generator" content="Hexo 4.2.0"></head>
+  <body>
+    
+
+    <div class="preloader">
+        
+    </div>
+
+
+    <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="http://yoursite.com">
+        <!-- <img src="https://themes.gohugo.io/theme/kross-hugo-portfolio-template/images/logo.png" alt="OKfe"> -->
+        OKfe
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/">首页</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/blog">博客</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/weekly">周刊</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/archive">归档</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/tags">标签</a>
+                
+            </li>
+          
+            <li class="nav-item">
+                
+                  <a class="nav-link" href="/about">关于</a>
+                
+            </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+  <!-- hero area -->
+  <section class="hero-area bg-primary overflow-hidden" id="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h1 class="text-white font-tertiary">hi, 我们是OKfe Team</h1>
+        </div>
+      </div>
+    </div>
+    <div class="layer-bg w-100">
+      <img class="img-fluid w-100" src="/css/images/illustrations/leaf-bg.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l2">
+      <img src="/css/images/illustrations/dots-cyan.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l3">
+      <img src="/css/images/illustrations/leaf-orange.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l4">
+      <img src="/css/images/illustrations/dots-orange.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l5">
+      <img src="/css/images/illustrations/leaf-yellow.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l6">
+      <img src="/css/images/illustrations/leaf-cyan.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l7">
+      <img src="/css/images/illustrations/dots-group-orange.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l8">
+      <img src="/css/images/illustrations/leaf-pink-round.svg" alt="bg-shape">
+    </div>
+    <div class="layer" id="l9">
+      <img src="/css/images/illustrations/leaf-cyan-2.svg" alt="bg-shape">
+    </div>
+    <!-- social icon -->
+    <!-- <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      {{ range .Site.Params.social }}
+      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      {{ end }}
+    </ul> -->
+    <!-- /social icon -->
+  </section>
+  <!-- /hero area -->
+
+
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        
+          <p class="font-secondary lead text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          
+            
+            <a href="about" class="btn btn-transparent">know more</a>
+            
+          
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
+
+
+
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">我们擅长</h2>
+      </div>
+      
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+              <div class="wave" data-progress="90%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">React(90%)</h4>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+              <div class="wave" data-progress="95%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">性能优化(95%)</h4>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+              <div class="wave" data-progress="80%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">响应式开发(80%)</h4>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+              <div class="wave" data-progress="70%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">H5(70%)</h4>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+<!-- /skills -->
+
+
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">博客</h2>
+      </div>
+      
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/04/12/888/">周刊第二期</a>
+        </h4>
+        <p class="cars-text">使用场景
+开发NPM模块的时候，有时我们会希望，边开发边试用，比如本地调试的时候，require(‘myModule’)会自动加载本机开发中的模块。No ...</p>
+        <a href="/2020/04/12/888/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+        
+      
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/05/06/hello-world/">周刊第一期</a>
+        </h4>
+        <p class="cars-text">Welcome to Hexo! This is your very first post. Check documentation for more  ...</p>
+        <a href="/2020/05/06/hello-world/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+        
+      
+        
+          <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/04/20/test/">test</a>
+        </h4>
+        <p class="cars-text">使用背景
+入职新公司不久， 这边的开发模式也是前后端分离，在后台接口没有开发完成的情况下，而前端工作已经做完了，等接口是不可能的，这边的解决方案是在前端 ...</p>
+        <a href="/2020/04/20/test/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <div class="col-lg-10 mx-auto text-center">
+        <a href="blog" class="btn btn-transparent">know more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog -->
+
+
+
+  <!-- weekly -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">周刊</h2>
+        </div>
+        
+          
+            <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/04/12/888/">周刊第二期</a>
+        </h4>
+        <p class="cars-text">使用场景
+开发NPM模块的时候，有时我们会希望，边开发边试用，比如本地调试的时候，require(‘myModule’)会自动加载本机开发中的模块。No ...</p>
+        <a href="/2020/04/12/888/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+          
+        
+          
+            <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/05/06/hello-world/">周刊第一期</a>
+        </h4>
+        <p class="cars-text">Welcome to Hexo! This is your very first post. Check documentation for more  ...</p>
+        <a href="/2020/05/06/hello-world/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+          
+        
+          
+            <div class="col-lg-4 col-sm-6 mb-4">
+    <article class="card shadow">
+      <img class="rounded card-img-top" src="/css/images/blog/post-2.jpg" alt="">
+      <div class="card-body">
+        <h4 class="card-title"><a class="text-dark" href="/2020/04/20/test/">test</a>
+        </h4>
+        <p class="cars-text">使用背景
+入职新公司不久， 这边的开发模式也是前后端分离，在后台接口没有开发完成的情况下，而前端工作已经做完了，等接口是不可能的，这边的解决方案是在前端 ...</p>
+        <a href="/2020/04/20/test/" class="btn btn-xs btn-primary">Read More</a>
+      </div>
+    </article>
+</div>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <div class="col-lg-10 mx-auto text-center">
+          <a href="weekly" class="btn btn-transparent">know more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /weekly -->
+  
+
+
+
+  
+  <!-- testimonial -->
+  <section class="section bg-primary position-relative testimonial-bg-shapes">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title text-white mb-5">技术大牛</h2>
+        </div>
+        <div class="col-lg-10 mx-auto testimonial-slider">
+          
+          <!-- slider-item -->
+          <div class="text-center testimonial-content">
+            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+            <p class="text-white mb-4">尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。</p>
+            <img width="150" class="img-fluid rounded-circle mb-4 d-inline-block" src="https://avatars3.githubusercontent.com/u/499550?s=460&amp;u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&amp;v=4" alt="client-image">
+            <h4 class="text-white">尤雨溪</h4>
+            <h6 class="text-light mb-4">vue 作者</h6>
+          </div>
+          
+          <!-- slider-item -->
+          <div class="text-center testimonial-content">
+            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+            <p class="text-white mb-4">尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。</p>
+            <img width="150" class="img-fluid rounded-circle mb-4 d-inline-block" src="https://avatars3.githubusercontent.com/u/499550?s=460&amp;u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&amp;v=4" alt="client-image">
+            <h4 class="text-white">尤雨溪222</h4>
+            <h6 class="text-light mb-4">vue 作者</h6>
+          </div>
+          
+          <!-- slider-item -->
+          <div class="text-center testimonial-content">
+            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+            <p class="text-white mb-4">尤雨溪是Vue.js框架的作者，HTML5版Clear的打造人。他认为，未来App的趋势是轻量化和细化，能解决问题的应用就是好应用。而在移动互联网时代大的背景下，个人开发者的机遇在门槛低，成本低，跨设备和多平台四个方面。</p>
+            <img width="150" class="img-fluid rounded-circle mb-4 d-inline-block" src="https://avatars3.githubusercontent.com/u/499550?s=460&amp;u=de41ec9325e8a92e281b96a1514a0fd1cd81ad4a&amp;v=4" alt="client-image">
+            <h4 class="text-white">尤雨溪333</h4>
+            <h6 class="text-light mb-4">vue 作者</h6>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- bg shapes -->
+    <img src="/css/images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+    <img src="/css/images/illustrations/dots-group-v.svg" alt="bg-shape" class="img-fluid bg-shape-1">
+    <img src="/css/images/illustrations/leaf-orange.svg" alt="bg-shape" class="img-fluid bg-shape-2">
+    <img src="/css/images/illustrations/dots-group-sm.svg" alt="bg-shape" class="img-fluid bg-shape-3">
+    <img src="/css/images/illustrations/leaf-pink-round.svg" alt="bg-shape" class="img-fluid bg-shape-4">
+    <img src="/css/images/illustrations/leaf-cyan.svg" alt="bg-shape" class="img-fluid bg-shape-5">
+  </section>
+  <!-- /testimonial -->
+  
+    
+    
+<section class="section section-on-footer" data-background="{{`images/backgrounds/bg-dots.png` | absURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="" method="POST" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">iamfuryman@sina.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">123456789090}</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">@Copyright. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/css/slick/slick.min.js"></script>
+<script src="/js/shuffle.min.js"></script>
+<script src="/js/highlight.min.js"></script>
+
+  
+
+<script src="/js/main.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

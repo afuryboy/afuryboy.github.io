@@ -1,0 +1,61 @@
+#archives:before {
+  position: absolute;
+  top: 2em;
+  bottom: 1em;
+  left: 30px;
+  height: auto;
+  content: '';
+  background-color: var(--primary-color);
+  width: 4px;
+  box-sizing: initial;
+}
+.time-section {
+  padding-left: 30px;
+  position: relative;
+}
+.time-section .section-year {
+  cursor: pointer;
+  font-size: 1.8em;
+  margin-left: 10px;
+}
+.time-section .section-year:before {
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  content: '';
+  background-color: var(--white);
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  box-sizing: initial;
+}
+.time-section .section-list .section-list-item {
+  margin: 20px 0 20px 10px;
+  position: relative;
+}
+.time-section .section-list .section-list-item:before {
+  position: absolute;
+  left: -29px;
+  top: 7px;
+  content: '';
+  background-color: var(--primary-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-sizing: initial;
+}
+.time-section .section-list .section-list-item .archive-title {
+  color: color-dark;
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+.time-section .section-list .section-list-item .archive-title:hover {
+  color: var(--primary-color);
+  padding-left: 10px;
+}
+.time-section .section-list .section-list-item .archive-date {
+  color: color-gray;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
