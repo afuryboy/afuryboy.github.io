@@ -1,0 +1,35 @@
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>
+        <% if (page.title){ %>
+        <%= page.title %> | <%= config.title %>
+        <% } else { %>
+        <%= config.title %>
+        <% } %>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="<%= config.description || theme.description %>">
+    <meta name="keyword" content="<%= config.keywords || theme.keywords %>">
+    <% if (config.favicon || theme.favicon){ %>
+    <link rel="shortcut icon" type="image/ico" href="<%= config.favicon || theme.favicon %>"/>
+    <% } else { %>
+    <%- favicon_tag('css/images/logo.png') %>
+    <% } %>
+
+    <style>
+      :root{
+        --primary-color: #41228e;
+      }
+    </style>
+  
+    <%- css(['css/bootstrap.min.css', 'css/slick/slick.css', 'css/themify-icons/themify-icons.css', 'css/highlight.min.css']) %>
+  
+    <%- css(['css/style']) %>
+  
+    <% if (config.favicon || theme.favicon){ %>
+      <link rel="shortcut icon" type="image/ico" href="<%= config.favicon || theme.favicon %>"/>
+    <% } else { %>
+      <%- favicon_tag('favicon.png') %>
+    <% } %>
+  
+  </head>
