@@ -1,0 +1,18 @@
+
+
+<%- partial('_partial/page-title') %>
+
+
+
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <% site.posts.each(function(post) { %>
+        <%- partial('_widget/post',{post: post}) %>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<!-- /blog -->

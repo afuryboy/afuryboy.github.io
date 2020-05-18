@@ -1,0 +1,11 @@
+<div class="col-lg-4 col-sm-6 mb-4">
+  <article class="card shadow">
+    <img class="rounded card-img-top" src="https://picsum.photos/seed/<%= post.title%>/350/250" alt="">
+    <div class="card-body">
+      <h4 class="card-title"><a class="text-dark" href="<%- url_for(post.path) %>"><%= post.title%></a>
+      </h4>
+      <p class="cars-text"><%- truncate(strip_html(post.content), { length: 80, omission: ' ...' }) %></p>
+      <a href="<%- url_for(post.path) %>" class="btn btn-xs btn-primary">Read More</a>
+    </div>
+  </article>
+</div>

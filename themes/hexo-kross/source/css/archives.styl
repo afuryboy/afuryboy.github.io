@@ -1,0 +1,54 @@
+#archives
+  &:before
+    position: absolute
+    top: 2em
+    bottom: 1em
+    left: 30px
+    height: auto
+    content: ''
+    background-color:var(--primary-color);
+    width: 4px
+    box-sizing: initial
+.time-section
+  padding-left: 30px
+  position: relative
+  .section-year
+    cursor: pointer
+    font-size: 1.8em
+    margin-left: 10px
+    &:before
+      position: absolute
+      left: 8px
+      top: 11px
+      content: ''
+      background-color: var(--white);
+      width: 12px
+      height: 12px
+      border: 2px solid var(--primary-color);
+      border-radius: 50%
+      box-sizing: initial
+  .section-list
+    .section-list-item
+      margin: 20px 0 20px 10px
+      position: relative
+      &:before
+        position: absolute
+        left: -29px
+        top: 7px
+        content: ''
+        background-color: var(--primary-color);
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        box-sizing: initial
+      .archive-title
+        color: color-dark
+        transition: all .3s ease
+        font-size: 1.1em
+        &:hover
+          color: var(--primary-color);
+          padding-left: 10px
+      .archive-date
+        color: color-gray
+        font-size: .9em
+        margin: 5px 0

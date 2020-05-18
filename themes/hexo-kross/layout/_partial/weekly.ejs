@@ -1,0 +1,21 @@
+
+<%- partial('_partial/page-title') %>
+
+
+
+
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <% site.tags.each(function(tag) { %>
+        <% if(tag.name === 'weekly'){%>
+          <% tag.posts.map(function(post) { %>
+            <%- partial('_widget/post',{post: post}) %>
+          <% }) %>
+        <%}%>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<!-- /blog -->

@@ -1,0 +1,19 @@
+<%- partial('_partial/page-title') %>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="font-tertiary mb-5"><%= page.title%></h3>
+        <p class="font-secondary">
+          <%= date(page.updated)%>
+          <!-- <span class="text-primary">{{.Site.Params.Author}}</span> -->
+        </p>
+        <div class="content">
+          <!-- <img src="{{.Params.Image | absURL }}" alt="post-thumb" class="img-fluid rounded float-left mr-5 mb-4"> -->
+          <%- page.content%>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

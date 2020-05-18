@@ -1,0 +1,58 @@
+homepage:
+  banner:
+    title: 'hexo-kross'
+  about:
+    enable: true
+    content: "hexo-kross 是一个hexo的主题，它借鉴于hugo的kross主题，如果大家喜欢它欢迎下载并在您的博客中使用它"
+    button:
+      enable : true
+      label : "know more"
+      URL : "about"
+  skill:
+    enable : true
+    title : "Skills"
+    item:
+      - title : "Skill A"
+        progress : "90%"
+        color : "#fdb157"
+        
+      - title : "Skill B"
+        progress : "60%"
+        color : "#9473e6"
+        
+      - title : "Skill C"
+        progress : "80%"
+        color : "#bdecf6"
+        
+      - title : "Skill D"
+        progress : "70%"
+        color : "#ffbcaa"
+  blog:
+    enable : true
+    title : "博客"
+    button:
+      enable : true
+      label : "know more"
+      url : "blog"
+  weekly:
+    enable : false
+    title : "周刊"
+    button:
+      enable : true
+      label : "know more"
+      url : "weekly"
+  team:
+    enable: false
+    title : "Team"
+    team_member:
+      - title : "Jack Schenziwe"
+        image : "/css/images/team/member-1.png"
+        designation : "前端工程师"
+        
+      - title : "Julias Carlie"
+        image : "/css/images/team/member-2.png"
+        designation : "前端工程师"
+        
+      - title : "John Doe"
+        image : "/css/images/team/member-3.png"
+        designation : "前端工程师"
